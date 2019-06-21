@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tên lớp</title>
+</head>
+<body>
+<script>
+
+
+    function tenLop(str) {
+
+        let regexp = /^[CAP][0-9]{4}[GHIKLM]$/;
+
+        if(regexp.test(str)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let lopToi = "C0318G";
+    console.log(tenLop(lopToi));
+    lopToi = "M0318G";
+    console.log(tenLop(lopToi));
+    lopToi = "P0323A";
+    console.log(tenLop(lopToi));
+
+
+
+</script>
+</body>
+</html>
